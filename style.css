@@ -1,0 +1,216 @@
+@font-face {
+    font-family: "Poppins-semibold";
+    src: url(fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Poppins-extralight";
+    src: url(fonts/Poppins-ExtraLight.ttf);
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: "Poppins-extralight";
+    background-color: #dddddd;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal del simulador */
+.simulador {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    width: 50%;
+}
+
+/* Título del simulador */
+.simulador h1 {
+    font-family: "Poppins-semibold";
+    font-size: 1.5rem;
+    color: #1f1f1f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los grupos del formulario */
+.content {
+    margin-bottom: 15px;
+}
+
+.content p {
+    background-color: #dddddd;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    color: #1f1f1f;
+    font-weight: bold;
+}
+
+.tecnologia {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.piscina {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.quincho {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.plantas {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.material {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.revestimiento {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #1f1f1f;
+    margin-right: 100px;
+}
+
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #1f1f1f;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family: "Poppins-extralight";
+    color: #333;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+input[type="number"]:invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 8px rgba(220, 53, 69, 0.5);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    position: absolute;
+    opacity: 0;
+    pointer-events: all;
+}
+
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 35px;
+    display: inline-block;
+    cursor: pointer;
+    color: #333;
+    transition: all 0.3s ease;
+    margin-right: 20px;
+}
+
+input[type="radio"] + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #1f1f1f;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="radio"]:checked + label::before {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(252, 254, 255, 0.3);
+}
+
+input[type="radio"]:checked + label {
+    color: #000000;
+}
+
+input[type="radio"] + label:hover::before {
+    border-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+button {
+    width: 49%;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: "Poppins-semibold";
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button[type="reset"] {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-5px);
+    background-color: #c8c8c8;
+}
+
+button[type="reset"]:hover {
+    background-color: #000000;
+    transform: translateY(-5px);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00000080;
+}
+
+.simulador-form p {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}

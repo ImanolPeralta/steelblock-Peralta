@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CDN De SweetAlert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--Style CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador Interactivo</title>
+</head>
+<body>
+    <!--SIMULADOR INTERACTIVO STEEL BLOCK-->
+    <div class="simulador">
+        <h1>SIMULADOR INTERACTIVO STEEL BLOCK 🪨</h1>
+        <form id="simulador-form">
+            <div class="content">
+                <label>Seleccione el tipo de tecnología:</label>
+                <div class="tecnologia" id="tecnologia">
+                <input type="radio" id="tradicional" name="tecnología" value="tradicional">
+                <label for="tradicional">Tradicional</label>
+                <input type="radio" id="steel-frame" name="tecnología" value="steel-frame">
+                <label for="steel-frame">Steel Frame</label>
+            </div>
+            </div>
+
+            <div class="content">
+                <div class="metros" id="metros">
+                <label for="area">Cantidad de metros cuadrados:</label>
+                <input type="number" id="area" name="area" placeholder="Escriba la cantidad de metros cuadrados que desea calcular: Ej (200, 300, etc.)">
+            </div>
+            </div>
+
+            <div class="content">
+                <label>¿Desea incluir piscina? (Opcional)</label>
+                <div class="piscina" id="piscina">
+                    <input type="radio" id="piscina-si" name="piscina" value="si">
+                    <label for="piscina-si">Sí</label>
+                    <input type="radio" id="piscina-no" name="piscina" value="no">
+                    <label for="piscina-no">No</label>
+                </div>
+            </div>
+
+            <div class="content">
+                <label>¿Quiere incluir quincho? (Opcional)</label>
+                <div class="quincho" id="quincho">
+                <input type="radio" id="quincho-si" name="quincho" value="si">
+                <label for="quincho-si">Sí</label>
+                <input type="radio" id="quincho-no" name="quincho" value="no">
+                <label for="quincho-no">No</label>
+            </div>
+            </div>
+
+            <div class="content">
+                <label>¿De cuántas plantas quiere que sea su casa?</label>
+                <div class="plantas" id="plantas">
+                <input type="radio" id="un-piso" name="pisos" value="1">
+                <label for="un-piso">1 Planta</label>
+                <input type="radio" id="dos-pisos" name="pisos" value="2">
+                <label for="dos-pisos">2 Plantas</label>
+            </div>
+            </div>
+
+            <div class="content">
+                <label>Seleccione el tipo de material <b>(Construcción tradicional)</b>:</label>
+                <div class="material" id="materiales">
+                <input type="radio" id="ladrillo-comun" name="material" value="ladrillo-comun">
+                <label for="ladrillo-comun">Ladrillo común</label>
+                <input type="radio" id="ladrillo-bloque" name="material" value="ladrillo-bloque">
+                <label for="ladrillo-bloque">Ladrillo bloque</label>
+                <input type="radio" id="hormigon" name="material" value="hormigon">
+                <label for="hormigon">Hormigón armado</label>
+            </div>
+            </div>
+
+            <div class="content">
+                <label>¿De qué material le gustaría que sea el revestimiento? <b>(Construcción Steel Frame)</b>:</label>
+                <div class="revestimiento" id="revestimientos">
+                <input type="radio" id="placas-yeso" name="revestimiento" value="placas-yeso">
+                <label for="placas-yeso">Placas de yeso</label>
+                <input type="radio" id="placas-mdf" name="revestimiento" value="placas-mdf">
+                <label for="placas-mdf">Placas MDF</label>
+            </div>
+            </div>
+
+            <div class="content">
+                <p>Precio final: $</p>
+            </div>
+            <button type="submit">Aceptar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </div>
+    <script src="miarchivo.js"></script>
+</body>
+</html>
